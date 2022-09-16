@@ -1,0 +1,15 @@
+Package: ssuex
+Type: Package
+Title: Student allocation of SSUs at Exeter University
+Version: 0.1.0
+Author: Andrew R Wood
+Maintainer: Andrew R Wood <a.r.wood@exeter.ac.uk>
+Description: This package allocates students to SSUs based on preferences and maximum capacity of SSUs. The package will attempt to allocate at least one listed SSU randomly, weighting students towards SSUs with more popularity.
+License: TBC
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

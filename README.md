@@ -8,7 +8,7 @@ First, you must download the R package from this GitHub repos which can be done 
 ```
     install.packages("devtools")
 ```
-Once installed, you can use it to download the R package from GitHub
+Once installed, you can use devtools to download and install the R package directly from GitHub
 ```
     library(devtools)
     install_github("drarwood/ssuex")

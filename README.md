@@ -62,7 +62,7 @@ John Adams    000000001       E2/331  E2/377  E2/174  E2/416  19            E2/3
 Peter Clark   000000002       E2/174  E2/331  E2/416  E2/487  23            E2/416 
 ```
 
-The `choice_score` for a student is calculated based on the sum of the total number of requests made by all students for the SSUs chosen by the student. So students with a higher score are likely to have picked SSUs that are more popular. This field can be ignored but is used when determining which SSUs to handle first to ensure there is a bias towards filling SSUs that have been selected at a relatively high frequency. The `assignemnt` column contains the assigned SSU for the student.
+The `choice_score` for a student is calculated based on the sum of the total number of requests made by all students for the SSUs chosen by the student. So students with a higher score are likely to have picked SSUs that are more popular. This field can be ignored but is used when determining which students and SSUs to handle first to ensure there is a bias towards filling SSUs that have been selected at a relatively high frequency. The `assignemnt` column contains the assigned SSU for the student.
 
 
 #### 2. SSU Summary File (file_prefix_ssus.txt)

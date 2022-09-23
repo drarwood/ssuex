@@ -62,20 +62,20 @@ After executing the command above, two files will be generated:
 
 The SSU allocations file will hold the original data in the file containing student SSU preferences plus 2 additional columns:
 ```
-student_name  student_number  c1      c2      c3      c4      choice_score  assignment
-John Adams    000000001       E2/331  E2/377  E2/174  E2/416  19            E2/377
-Peter Clark   000000002       E2/174  E2/331  E2/416  E2/487  23            E2/416 
+student_number  last_name  first_name  c1      c2      c3      c4      assignment  chosen
+000000001       Adams      Samuel      E2/331  E2/377  E2/174  E2/416  E2/331      YES
+000000002       Angelo     Michael     E2/174  E2/331  E2/416  E2/487  E2/416      YES
 ```
 
-The `choice_score` for a student is calculated based on the sum of the total number of requests made by all students for the SSUs chosen by the student. So students with a higher score are likely to have picked SSUs that are more popular. This field can be ignored but is used when determining which students and SSUs to handle first to ensure there is a bias towards filling SSUs that have been selected at a relatively high frequency. The `assignemnt` column contains the assigned SSU for the student.
+The `assignment` column contains the assigned SSU for the student. The `chosen` columns contains values "YES" / "NO" depending on whether the allocated SSU is in the list of preferences provided by the student (if at all). If not choices are provided, this is set to "NO".
 
 
 #### 2. SSU Summary File (file_prefix_ssus.txt)
 
 The SSU summary file contains a summary of the SSUs provided, their capacity, the total number of requests made by all students (`requests`), and the number of students assigned (`count`):
 ```
-unit_code   spaces   requests   count
-E2/377      6        28         6
-E2/416      6        21         6
+unit_code   spaces   random_alloc  requests   count
+E2/377      6        Y             28         6
+E2/416      6        Y             21         6
 ...
 ```

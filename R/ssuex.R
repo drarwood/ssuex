@@ -9,7 +9,7 @@
 #' @param sFile Tab delimited file with header containing information about students:
 #' \code{student number, last name, first name, c1, ..., cN}
 #' @param uFile Tab delimited file with header containing information about SSUs:
-#' \code{unit code, spaces available, random allowcation allowed}
+#' \code{unit code, spaces available, random allocation allowed}
 #' @param oFile Name of output file
 #' @return NA
 #' @export

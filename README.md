@@ -65,6 +65,7 @@ The SSU allocations file will hold the original data in the file containing stud
 student_number  last_name  first_name  c1      c2      c3      c4      assignment  chosen
 000000001       Adams      Samuel      E2/331  E2/377  E2/174  E2/416  E2/331      YES
 000000002       Angelo     Michael     E2/174  E2/331  E2/416  E2/487  E2/416      YES
+...
 ```
 
 The `assignment` column contains the assigned SSU for the student. The `chosen` columns contains values "YES" / "NO" depending on whether the allocated SSU is in the list of preferences provided by the student (if at all). If not choices are provided, this is set to "NO".
